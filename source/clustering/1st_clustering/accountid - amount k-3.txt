@@ -1,0 +1,54 @@
+
+features: amount e duration
+ficheiro: dataset_trans_v1
+
+correlation matrix:
+			duration	         amount
+duration	1.0	                0.5932097238201222
+amount	 0.5932097238201222	    1.0
+
+
+Para K = 3
+chart: accountid - amount k-3.PNG
+
+Cluster 0: 62 items
+Cluster 1: 142 items
+Cluster 2: 124 items
+Total number of items: 328
+
+centroid table
+
+			cluster 0			cluster 1			cluster 2
+duration	1.0265225248139553	-0.9759649922606772	0.6043760674399286
+amount	1.656729586487586	-0.6479003751675723	-0.08641436361641178
+
+
+
+Para K = 4 
+chart: accountid - amount k-4.PNG
+
+Cluster 0: 80 items
+Cluster 1: 45 items
+Cluster 2: 137 items
+Cluster 3: 66 items
+Total number of items: 328
+
+				cluster 0				cluster 1				cluster 2		  cluster 3
+duration	0.008744764569726032	1.2516673020801028	-0.9333919146211822	   1.0734860991502932
+amount	    0.4376446723904085	   1.8767469007206885   -0.7546347053888419	   -0.24363984371806563
+
+
+
+Para K = 5
+chart: accountid - amount k-5.PNG
+
+Cluster 0: 30 items
+Cluster 1: 61 items
+Cluster 2: 114 items
+Cluster 3: 62 items
+Cluster 4: 61 items
+Total number of items: 328
+
+				cluster 0			cluster 1				cluster 2			cluster 3			cluster 4
+duration	1.17996023260835	1.1137389498721417	-1.085731558946496	0.5638962701574877	-0.23811563852974968
+amount	    2.2318989433157075	0.5640051913860166	-0.7745174564309937	-0.6728321872856967	0.4696606667348892

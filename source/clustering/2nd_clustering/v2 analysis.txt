@@ -15,7 +15,7 @@ payment_monthly	        -0.09611264836472473	0.6662131848465285	0.31593390285388
 
 
 
-Para K = 3
+Para K = 3 (BEST)
 chart: v2 k-3.PNG
 
 Cluster 0: 150 items

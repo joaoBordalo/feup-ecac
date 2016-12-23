@@ -24,7 +24,7 @@ amount	1.656729586487586	-0.6479003751675723	-0.08641436361641178
 
 
 
-Para K = 4 
+Para K = 4 (BEST)
 chart: accountid - amount k-4.PNG
 
 Cluster 0: 80 items

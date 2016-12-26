@@ -8,11 +8,11 @@ import numpy as np
 
 import utils
 
-def get_client_owner_gender(file_name, return_name):
+def get_client_owner_gender(file_name, loans_file, return_name):
     dataframe = pd.read_csv(os.path.abspath('./' + file_name), sep=";", low_memory=False)
     clients = utils.load_dataframe('clients_modified.csv')
     disp = utils.load_dataframe('disp.csv')
-    loan_dates = utils.load_dataframe('train_sets/loan_train_modified.csv')[['account_id', 'date']]
+    loan_dates = utils.load_dataframe(loans_file)[['account_id', 'date']]
     
     owner_clients = disp.groupby(['type'], as_index=False).get_group('OWNER')
     owner_clients = pd.merge(owner_clients, clients, on='client_id', how='outer')
@@ -48,5 +48,8 @@ def get_client_owner_gender(file_name, return_name):
     
     utils.write_dataframe_to_CSV(dataframe, return_name)
         
-get_client_owner_gender('dataset_train_v1.csv', 'dataset_train_v1_v3.csv')
-get_client_owner_gender('dataset_train_v2.csv', 'dataset_train_v2_v3.csv')
+get_client_owner_gender('dataset_train_v1.csv', 'train_sets/loan_train_modified.csv', 'dataset_train_v1_v3.csv')
+get_client_owner_gender('dataset_train_v2.csv', 'train_sets/loan_train_modified.csv', 'dataset_train_v2_v3.csv')
+
+get_client_owner_gender('dataset_test_v1.csv', 'test_sets/loan_test_modified.csv', 'dataset_test_v1_v3.csv')
+get_client_owner_gender('dataset_test_v2.csv', 'test_sets/loan_test_modified.csv', 'dataset_test_v2_v3.csv')

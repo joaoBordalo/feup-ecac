@@ -51,19 +51,21 @@ utils.write_dataframe_to_CSV(test_v2, 'dataset_test_v2.csv')
 #########################################################################################
 
 #basic_v1 clustering
-model_v1 = clustering.build_model(5)
-model_v1.fit(basic_v1)
-
-# View the results
-# Set the size of the plot
-plt.figure(figsize=(20,7))
- 
-# Create a colormap
-colormap = np.array(['red', 'blue', 'yellow', 'pink', 'green'])
- 
-# Plot the Models Classifications
-plt.subplot(1, 2, 2)
-plt.scatter(basic_v1.duration, basic_v1.amount, c=colormap[model_v1.labels_], s=40)
-plt.title('K Mean Classification V1')
+#==============================================================================
+# model_v1 = clustering.build_model(5)
+# model_v1.fit(basic_v1)
+# 
+# # View the results
+# # Set the size of the plot
+# plt.figure(figsize=(20,7))
+#  
+# # Create a colormap
+# colormap = np.array(['red', 'blue', 'yellow', 'pink', 'green'])
+#  
+# # Plot the Models Classifications
+# plt.subplot(1, 2, 2)
+# plt.scatter(basic_v1.duration, basic_v1.amount, c=colormap[model_v1.labels_], s=40)
+# plt.title('K Mean Classification V1')
+#==============================================================================
 
 #########################################################################################

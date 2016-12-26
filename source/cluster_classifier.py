@@ -43,4 +43,5 @@ def classify_clusters(file_name, return_name):
 
 #classify_clusters('1st_clustering/clustering_v1.csv', '1st_clustering/clustering_v1_results.csv')
 #classify_clusters('2nd_clustering/clustering_v2.csv', '2nd_clustering/clustering_v2_results.csv')
-classify_clusters('3rd_clustering/clustering_v3_amount_dur.csv', '3rd_clustering/clustering_v3_amount_dur_results.csv')
+#classify_clusters('3rd_clustering/clustering_v3_amount_dur.csv', '3rd_clustering/clustering_v3_amount_dur_results.csv')
+classify_clusters('4th_clustering/4th_clustering.csv', '4th_clustering/4th_clustering_results.csv')

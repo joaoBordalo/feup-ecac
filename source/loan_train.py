@@ -24,18 +24,16 @@ def create_status_dataframe(dataframe):
     return df
     
 #################################### Train Files #########################################
-#==============================================================================
-# # loading loan train file
-# loans_mod = utils.load_dataframe('train_sets/loan_train_modified.csv')
-# # create simple dataset
-# basic_v1 = create_basic_dataframe(loans_mod)
-# basic_v1.drop(basic_v1.columns[0], axis=1)
-# utils.write_dataframe_to_CSV(basic_v1, 'dataset_train_v1.csv')
-# # calculate the mean of transactions
-# basic_v2 = trans_train.get_mean_trans_values('train_sets/trans_train_modified.csv', basic_v1)
-# basic_v2 = trans_train.get_mean_balance_amount_racio('train_sets/trans_train_modified.csv', basic_v2)
-# utils.write_dataframe_to_CSV(basic_v2, 'dataset_train_v2.csv')
-#==============================================================================
+# loading loan train file
+loans_mod = utils.load_dataframe('train_sets/loan_train_modified.csv')
+# create simple dataset
+basic_v1 = create_basic_dataframe(loans_mod)
+basic_v1.drop(basic_v1.columns[0], axis=1)
+utils.write_dataframe_to_CSV(basic_v1, 'dataset_train_v1.csv')
+# calculate the mean of transactions
+basic_v2 = trans_train.get_mean_trans_values('train_sets/trans_train_modified.csv', basic_v1)
+basic_v2 = trans_train.get_mean_balance_amount_racio('train_sets/trans_train_modified.csv', basic_v2)
+utils.write_dataframe_to_CSV(basic_v2, 'dataset_train_v2.csv')
 
 #################################### Test Files #########################################
 #utils.format_date_in_trans_test_CSV()

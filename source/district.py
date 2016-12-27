@@ -34,3 +34,5 @@ def get_enterpreneurs_ratio(input_file_name, output_file_name):
     
 get_enterpreneurs_ratio('dataset_train_v1_v3.csv', 'dataset_train_v1_v4.csv')
 get_enterpreneurs_ratio('dataset_train_v2_v3.csv', 'dataset_train_v2_v4.csv')
+get_enterpreneurs_ratio('dataset_test_v1_v3.csv', 'dataset_test_v1_v4.csv')
+get_enterpreneurs_ratio('dataset_test_v2_v3.csv', 'dataset_test_v2_v4.csv')

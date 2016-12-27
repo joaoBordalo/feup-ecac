@@ -16,10 +16,12 @@ def get_mean_trans_values(file, dataframe):
     
     credits_ = []
     withdrawals_ = []
+    balances_ = []
     
     for account_id in dataframe['account_id']:
         withdrawals_month = []
         credits_month = []
+        balance_month = []
 
         current_date = None
         
@@ -47,9 +49,17 @@ def get_mean_trans_values(file, dataframe):
                     withdrawals_month.append(withdrawal_amount / withdrawal_count)
                     withdrawal_amount = 0
                     withdrawal_count = 0
+                else:
+                    withdrawals_month.append(0)
+                    withdrawal_amount = 0
+                    withdrawal_count = 0
                     
                 if(credit_count != 0):
                     credits_month.append(credit_amount / credit_count)
+                    credit_amount = 0
+                    credit_count = 0
+                else:
+                    credits_month.append(0)
                     credit_amount = 0
                     credit_count = 0
                     
@@ -61,10 +71,14 @@ def get_mean_trans_values(file, dataframe):
                     withdrawal_count = withdrawal_count + 1
         
         if(withdrawal_count != 0):
-            withdrawals_month.append(withdrawal_amount / withdrawal_count)       
+            withdrawals_month.append(withdrawal_amount / withdrawal_count)
+        else:
+            withdrawals_month.append(0)
         
         if(credit_count != 0):
             credits_month.append(credit_amount / credit_count)
+        else:
+            credits_month.append(0)
         
         if(len(withdrawals_month) != 0):
             withdrawals_.append(round(sum(withdrawals_month) / len(withdrawals_month), 2))
@@ -75,8 +89,16 @@ def get_mean_trans_values(file, dataframe):
         else:
             credits_.append(0)
             
+        balance_month = [round(i - j, 2) for i, j in zip(credits_month, withdrawals_month)]
+        balances_.append(round(sum(balance_month) / len(balance_month), 2))
+        
+        #print credits_month
+        #print withdrawals_month
+        #print balance_month
+        
     dataframe['credits_mean'] = credits_
     dataframe['withdrawals_mean'] = withdrawals_
+    dataframe['balances_monthly_2'] = balances_
                 
     return dataframe
 

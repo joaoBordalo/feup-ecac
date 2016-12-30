@@ -1,0 +1,38 @@
+k = 2
+progressão linear entre o amount e a duração, isto é, quanto maior for o amount maior é a duração do empréstimo em questão.
+
+Cluster 0: 106 items
+Cluster 1: 222 items
+
+			cluster_0			cluster_1
+duration	48.339622641509436	29.89189189189189
+amount		270666.22641509434	85453.18918918919
+
+
+
+k = 3
+mesmas conlusões que em k = 2
+
+Cluster 0: 112 items
+Cluster 1: 37 items
+Cluster 2: 179 items
+
+			cluster_0			cluster_1				cluster_2
+duration	42.535714285714285	54.486486486486484		27.821229050279328
+amount		196073.25			363324.3243243243		68480.58100558659
+
+
+k = 4
+igual a k = 2 e k = 3
+
+Cluster 0: 20 items
+Cluster 1: 94 items
+Cluster 2: 52 items
+Cluster 3: 162 items
+
+				cluster_0		cluster_1				cluster_2				cluster_3
+duration		56.4			39.95744680851064		48.92307692307692		26.74074074074074
+amount			411902.4		163879.53191489363		266193.46153846156		62817.555555555555
+
+k = n
+serão sempre as mesmas conlusões

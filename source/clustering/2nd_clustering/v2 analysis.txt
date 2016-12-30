@@ -15,7 +15,7 @@ payment_monthly	        -0.09611264836472473	0.6662131848465285	0.31593390285388
 
 
 
-Para K = 3 (BEST)
+Para K = 3 
 chart: v2 k-3.PNG
 
 Cluster 0: 150 items
@@ -33,7 +33,7 @@ average_balance_monthly	-0.6545759817883327		-0.024786463644271423	0.98108008338
 payment_monthly			-0.5824127930505217		0.8894995890822043		0.1937250018365759
 
 
-Para K = 4 
+Para K = 4 (BEST)
 chart: v2 k-4.PNG
 
 Cluster 0: 56 items

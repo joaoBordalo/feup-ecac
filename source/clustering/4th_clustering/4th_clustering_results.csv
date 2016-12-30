@@ -1,5 +1,25 @@
-Cluster;Loan Successfull;Loan Unsuccessfull
-cluster_0;0.865;0.135
-cluster_1;0.923;0.077
-cluster_2;0.859;0.141
-cluster_3;0.821;0.179
+;cluster_0;cluster_1;cluster_2;cluster_3;;;;;
+number in;52;78;64;134;328.00;population;;;
+average_age;37,6;36,15;32,21;36,32;;;;;
+variance_age;156,52;128,63;161,2;165,48;;;;;
+deviation_age;12,51;11,34;12,7;12,86;;;;;
+male;30;36;32;67;;;;;
+female;22;42;31;67;;;;;
+;;;;;;;;;
+average_credit_mean;10384,25;16327,24;12857,61;7631,31;;account;;;
+average_withdrawals_mean;9356,41;13709,18;10450,61;6500,7;;;;;
+total_balance;220057;357225;376918;403603;;;;;
+average_balance_monthly;37942,15;54064,91;39112,6;30981,77;;;;;
+payment_monthly;4231,87;4579,81;5982,83;3011,96;;;;;
+;;;;;;;;;
+average_district_salary;12002,1;8954,09;9152,86;9071,58;;district info;;;
+average_payment_month;4231,87;4579,81;5982,83;3011,96;;;;;
+average_enterpreneur_ratio;0,162;0,112;0,117;0,113;;;;;
+average_district_unemployment_rate;0,498;4,219;3,826;4,147;;;;;
+;;;;;;;;;
+;;;;;;;;;
+total_amount;7352352;9025044;18560616;12501036;;loan;;;
+average_amount;141391,38;115705,69;294612,95;93291,31;;;;;
+average_duration;33,23;27,54;50,29;34,75;;;;;
+loan successfull;0,865;0,923;0,859;0,821;;;;;
+loan unsuccessfull;0,135;0,077;0,141;0,179;;;;;

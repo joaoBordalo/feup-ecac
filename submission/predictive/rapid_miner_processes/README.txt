@@ -1,0 +1,2 @@
+Para poder correr os processos, deixamos nesta pasta o ficheiro original dos loans para que os joins se processem.
+Para os conjuntos de treino e de teste, os ficheiros finais encontram-se na paste final_datasets.

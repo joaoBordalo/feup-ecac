@@ -1,0 +1,43 @@
+k-means;;;;;;;
+;;;;;;;
+k=3;;;;;;;
+;cluster_0;clsuter_1;cluster_2;average;Davies Bouldin;;
+sum of squares;-8,506;-9,008;-10,072;-9,117;-1,808;;
+silhouette;0,195;0,237;0,128;0,18;;;
+;;;;;;;
+k=4;;;;;;;
+;cluster_0;clsuter_1;cluster_2;cluster_3;average;Davies Bouldin;
+sum of squares;-8,761;-9,252;-8,6684;-7,631;-8,401;-1,855;
+silhouette;0,237;0,11;0,101;0,188;0,16;;
+;;;;;;;
+k=5;;;;;;;
+;cluster_0;clsuter_1;cluster_2;cluster_3;cluster_4;average;Davies Bouldin
+sum of squares;-9,189;-8,681;-8,591;-6,543;-6,917;-7,925;-2,017
+silhouette;0,096;0,219;0,099;0,145;0,121;0,13;
+;;;;;;;
+;;;;;;;
+k-medoids;;;;;;;
+;;;;;;;
+k=3;;;;;;;
+;cluster_0;clsuter_1;cluster_2;average;Davies Bouldin;;
+sum of squares;-12,167;-12,636;-14,561;-13,435;-1,503;;
+silhouette;0,147;0,243;0,023;0,1;;;
+;;;;;;;
+k=4;;;;;;;
+;cluster_0;clsuter_1;cluster_2;cluster_3;average;Davies Bouldin;
+sum of squares;13,844;-15,912;-11,476;-11,977;-12,759;-1,739;
+silhouette;0,054;0,13;0,13;0,046;0,08;;
+;;;;;;;
+k=5;;;;;;;
+;cluster_0;clsuter_1;cluster_2;cluster_3;cluster_4;average;Davies Bouldin
+sum of squares;-12,173;-13,53;-10,903;-10,964;-12,366;-12,276;-1,839
+silhouette;0,072;0,036;0,206;0,078;0,022;0,066;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+xmeans;;;;;;;
+;;;;;;;
+k=3;;;;;;;
+;cluster_0;clsuter_1;cluster_2;average;Davies Bouldin;;
+sum of squares;-8,117;-8,08;-11,052;-9,248;-1,829;;
+silhouette;0,211;0,288;0,09;0,175;;;
